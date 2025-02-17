@@ -8,13 +8,19 @@ package simplecalculator;
  *
  * @author nsoko
  */
-public class SimpleCalculator {
+public class CalculatorApp {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Calculator calc = new Calculator();
+        try {
+            System.out.println("5.0 / 0.0 = " + calc.divide(5.0, 0.0));
+        } catch (ArithmeticException e) {
+            System.out.println(e.getMessage());
+        }
     }
     
 }
