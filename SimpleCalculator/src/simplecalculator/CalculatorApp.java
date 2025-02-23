@@ -15,6 +15,7 @@ public class CalculatorApp {
         } catch (ArithmeticException e) {
             System.out.println(e.getMessage());
         }
+        CalculatorGUI gui = new CalculatorGUI();
     }
     
 }
