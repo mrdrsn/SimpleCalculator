@@ -1,14 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package simplecalculator;
 
-/**
- *
- * @author nsoko
- */
 public class Calculator {
+    
+    public static double add(double a, double b){
+        return a + b;
+    }
+    
+    public static double subtract(double a, double b){
+        return a - b;
+    }
+
      public static <T extends Number, U extends Number> double multiply(T a, U b) {
         return a.doubleValue() * b.doubleValue();
     }
@@ -20,5 +21,4 @@ public class Calculator {
         }
         return a.doubleValue() / denominator;
     }
-
 }
